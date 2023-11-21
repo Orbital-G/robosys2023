@@ -3,7 +3,6 @@ on: push
 jobs: 
   test:
     runs-on:
-    - macos-13
     - ubuntu-20.04
     strategy:
       matrix: 
