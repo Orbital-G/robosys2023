@@ -8,8 +8,16 @@ def plus(*numbers):
     return ans
 
 def main():
-    print("足したい数を入力")
-    numbers = [int(line) for line in input().split()]
+  numbers = []
+  while True:
+    num = input("足したい数値を入力: ")
+    try:
+      numbers.append(int(num))
+    except ValueError:
+      print("整数値を入力してください。")
+      continue
+    if num == "":
+      break
 
     result = plus(*numbers)
 
