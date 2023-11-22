@@ -1,13 +1,19 @@
 #!/usr/bin/python3
 # SPDX-FileCopyrightText: 2023 Kadono Kodai
 # SPDX-License-Identifier: BSD-3-Clause
-import sys
+def plus(*numbers):
+    ans = 0
+    for i in numbers:
+        ans += i
+    return ans
 
-ans = 0
-for line in sys.stdin:
-    try: 
-        ans += int(line)
-    except:
-        ans += float(line)
+def main():
+    print("足したい数を入力")
+    numbers = [int(line) for line in input().split()]
 
-print(ans)
+    result = plus(*numbers)
+
+    print(f"{numbers} の合計は {result} です。")
+
+if __name__ == "__main__":
+  main()
