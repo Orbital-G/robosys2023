@@ -10,6 +10,6 @@
   * テスト: ver3.7〜3.10
 
 ## テスト環境
-* Ubuntu, MacOS
+* Ubuntu-20.04
 
 * © 2023 Kadono Kodai
