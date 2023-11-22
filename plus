@@ -8,20 +8,20 @@ def plus(*numbers):
     return ans
 
 def main():
-  numbers = []
-  while True:
-    num = input("足したい数値を入力: ")
-    try:
-      numbers.append(int(num))
-    except ValueError:
-      print("整数値を入力してください。")
-      continue
-    if num == "":
-      break
-
+    numbers = []
+    while True:
+        num = input("足したい数値を入力: ")
+        if num == "":
+            break
+        try:
+            numbers.append(int(num))
+        except ValueError:
+            print("整数値を入力してください。")
+            continue
+ 
     result = plus(*numbers)
 
     print(f"{numbers} の合計は {result} です。")
 
 if __name__ == "__main__":
-  main()
+    main()
