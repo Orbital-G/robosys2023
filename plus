@@ -15,9 +15,13 @@ def main():
             break
         try:
             numbers.append(int(num))
+                 
         except ValueError:
-            print("整数値を入力してください。")
+            print("ValueError")
             continue
+        
+        except :
+            numbers.append(float(num))
  
     result = plus(*numbers)
 

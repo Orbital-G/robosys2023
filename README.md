@@ -12,4 +12,4 @@
 ## テスト環境
 * Ubuntu-20.04
 
-* © 2023 Kadono Kodai
+© 2023 Kadono Kodai
