@@ -1,31 +1,21 @@
 #!/usr/bin/python3
 # SPDX-FileCopyrightText: 2023 Kadono Kodai
 # SPDX-License-Identifier: BSD-3-Clause
-def plus(*numbers):
-    ans = 0
-    for i in numbers:
-        ans += i
-    return ans
+import sys
 
 def main():
     numbers = []
-    while True:
-        num = input("足したい数値を入力: ")
-        if num == "":
+    for line in sys.stdin:
+        num = line.strip()
+        if not num:
             break
         try:
-            numbers.append(int(num))
-                 
-        except ValueError:
-            print("ValueError")
-            continue
-        
-        except :
             numbers.append(float(num))
- 
-    result = plus(*numbers)
+        except ValueError:
+            print("ValluError")
 
-    print(f"{numbers} の合計は {result} です。")
+    result = sum(numbers)
+    print(result)
 
 if __name__ == "__main__":
     main()
