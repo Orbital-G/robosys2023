@@ -10,7 +10,11 @@ def main():
         if not num:
             break
         try:
-            numbers.append(float(num))
+            value = float(num)
+            if value.is_integer():
+                numbers.append(int(value))
+            else:
+                numbers.append(value)
         except ValueError:
             print("ValluError")
 
