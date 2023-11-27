@@ -10,5 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: All test
-      run: bash -xv ./test_int.bash
-      run: bash -xv ./test_float.bash
+      run: | 
+        bash -xv ./test_int.bash
+        bash -xv ./test_float.bash
