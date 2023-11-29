@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-FileCopyrightText: 2023 Kadono Kodai
+# SPDX-License-Identifier: BSD-3-Clause
 
 result=$(echo -e "3.3\n2.2\n1.1\n" | ./plus)
 
