@@ -10,7 +10,7 @@ $ git clone https://github.com/Orbital-G/robosys2023.git
 $ cd robosys2023
 ```
 
-./<実行したいプログラム>で実行したいプログラムを実行できます
+./<実行したいプログラム>で実行したいプログラムを実行できます。
 ```
 $ ./plus
 ~
@@ -30,7 +30,7 @@ $ ./plus
 
 6
 ```
-また、入力できる数字は小数にも対応しています
+また、入力できる数字は小数にも対応しています。
 ```
 $ ./plus
 0.1
@@ -42,7 +42,7 @@ $ ./plus
 
 ## plus_stdinコマンド
 ```
-$ ./plus_stdin
+$ seq 5 | ./plus_stdin
 
 ```
 
@@ -54,7 +54,7 @@ $ ./plus_stdin
 * Ubuntu-20.04
 
 ## 著作権、ライセンス情報
-* このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます
+* このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます。
 * このパッケージ内のplus_stdin.pyは，下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです。
   * [ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/blob/master/robosys_2022/lesson4.md "引用元のスライド")
 * © 2023 Kadono Kodai
