@@ -17,6 +17,7 @@ def main():
                 numbers.append(value)
         except ValueError:
             print("ValluError")
+            sys.exit(1)
 
     result = sum(numbers)
     print(result)
