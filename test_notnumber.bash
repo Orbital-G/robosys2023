@@ -4,8 +4,7 @@
 
 out=$(echo -e "あ\n" | ./plus 2>&1)
 if [ $? -eq 0 ]; then
-    echo "Test failed: Expected a ValueError"
+    exit 1
 else
-    echo "Test passed: ValueError correctly raised"
-    echo "stderr content: ${out}"
+    exit 0
 fi

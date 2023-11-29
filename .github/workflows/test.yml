@@ -13,3 +13,4 @@ jobs:
       run: | 
         bash -xv ./test_int.bash
         bash -xv ./test_float.bash
+        bash -xv ./test_notnumber.bash
